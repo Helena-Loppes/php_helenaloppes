@@ -1,0 +1,92 @@
+Currículo
+
+° tópicos necessários:
+  > informações pessoais
+  > informações acadêmicas
+  > projetos ou experiencias acadêmicas
+  > cursos complementares
+
+° ao mandar o currículo para alguém, mandar por pdf, se for para anexar o currículo em algum lugar, mandar docx
+
+° não focar somente em mim
+
+° palavra-chave da minha formação
+
+° pesquisar o que o mercado necessita
+
+° pesquisar mapa de carreira no vagas.com e lá, procurar por palavras-chave
+
+° usar chatgpt para resumir uma vaga, conseguir palavras-chave por ele
+
+° pesquisar o que o mercado necessita, qual a palavra-chave mais necessitada
+
+° não confundir currículo com portifólio
+
+° usar margem pequena, mais informação PROFISSIONAL melhor
+
+° não colocar informações muito pessoais, desnecessárias
+
+° usar hiperlink para e-mail
+
+° não fazer um currículo com mais de uma coluna
+
+° não colocar foto e idade (exceto jovem aprendiz)
+
+° não fazer objetivo textão (não colocar ser o primeiro emprego)
+  > "Atuar como técnico em..", falar sobre experiencias.
+
+° formação técnica
+  > somente os mais em peso, ensino médio, técnico, faculdade
+
+° curso complementar e idiomas (abaixo das experiencias acadêmicas)
+  > online e outros menores, menos importante
+  > caso tenha, colocar idiomas (nível intermediário para cima)
+
+° experiencia profissional e acadêmica (depois do objetivo pessoal)
+  > enfatizar a parte prática do curso (repositório)
+  > usar tópicos, nunca texto
+  > local para as palavras-chave
+
+  >> prompt para chatgpt:
+
+sou estudante do curso técnico de desenvolvimento de sistemas e vou fazer um projeto acadêmico de um sistema de gerenciamento, com exemplo prático de uma empresa fictícia. nesse projeto, desenvolvi, junto ao meus colegas, paginas html, com css e Java script, integração com banco de dados, mysql e php, nele foi feito o CRUD. descreva essa experiencia acadêmica usando palavras-chave para o técnico de desenvolvimento de sistemas, baseado em tópicos.
+
+  >> exemplo de experiencia:
+
+Projeto Acadêmico – Sistema de Gerenciamento Empresarial (Empresa Fictícia)
+Curso Técnico em Desenvolvimento de Sistemas
+Participação no desenvolvimento de um sistema web de gerenciamento para uma empresa fictícia, com foco em automação de processos administrativos.
+Criação de interfaces responsivas com uso de HTML5, CSS3 e JavaScript, garantindo boa usabilidade e navegação.
+Implementação de operações CRUD (Create, Read, Update, Delete) para cadastro e gerenciamento de dados.
+Integração completa com banco de dados MySQL para armazenamento estruturado das informações.
+Utilização de PHP como linguagem de back-end para desenvolvimento da lógica de negócio e conexão com o banco de dados.
+Aplicação de conceitos de programação web, desenvolvimento full stack, modelagem de dados e boas práticas de codificação.
+
+Projeto realizado em trabalho em equipe, com organização de tarefas, versionamento de código e divisão por módulos.
+Ênfase em desenvolvimento orientado a requisitos, validação de dados e testes funcionais do sistema.
+
+Desenvolvimento de um sistema completo de gerenciamento utilizando as tecnologias HTML, CSS, JavaScript, PHP e MySQL, com foco em aplicações web. O projeto inclui a criação de interfaces responsivas, interação dinâmica com o usuário por meio de JavaScript, lógica de negócios implementada em PHP e integração com banco de dados MySQL para armazenamento e manipulação de dados. As funcionalidades desenvolvidas abrangem cadastro, consulta, edição e exclusão de registros, além de autenticação de usuários e relatórios. (LEMBRAR DAS PALAVRAS-CHAVE, não colocadas aqui)
+
+
+
+LINKEDIN
+
+° no LinkedIn, podemos colocar mais informações do que o currículo
+
+° texto titulo, curto e objetivo
+
+° texto sobre
+  > "sou estudante de.. tenho interesse em.."
+  > descrever as experiencias acadêmicas "pude aplicar em tal projeto.. e desenvolver habilidades.."
+  > falar sobre um pouco da pessoa "atento aos detelhes.." humanizar o texto
+
+° experiencia
+  > igual o currículo
+
+° projetos
+  > adicionar seção, recomendados, adicionar projeto (acadêmico)
+  > copiar do currículo 
+
+° competências
+  > mexe com o algoritmo do LinkedIn
+  > usar as palavras-chave, o que você já tem experiencias (técnica e comportamental) listar nas competências
