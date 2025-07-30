@@ -37,10 +37,10 @@ if(is_numeric($busca)){
 }
 
 $stmt->execute();
-$cliente = $stmt->fetchALL()
+$clientes = $stmt->fetchAll();
 
 if(!$clientes){
-    die("Erro: Nenhu, cliente encontrado.");
+    die("Erro: Nenhum, cliente encontrado.");
 }
 ?>
 <table border="1">
