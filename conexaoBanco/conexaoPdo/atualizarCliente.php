@@ -32,7 +32,7 @@ if($idCliente && is_numeric($idCliente)){
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="atualizarCliente.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Atualizar Cliente</title>
     <script>
         function habilitarEdicao(campo){
@@ -69,7 +69,7 @@ if($idCliente && is_numeric($idCliente)){
             </svg>
             <div class="card-text-container">Inserir Cliente</div>
         </a>
-        <a href="listarCliente.php" class="card-link card-4">
+        <a href="listarClientes.php" class="card-link card-4">
             <svg class="card-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
                 <path d="M3 13h2v-2H3v2zm0 4h2v-2H3v2zm0-8h2V7H3v2zm4 4h14v-2H7v2zm0 4h14v-2H7v2zm0-10v2h14V7H7z"/>
             </svg>
