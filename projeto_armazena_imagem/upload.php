@@ -7,7 +7,7 @@ $descricao=$_POST['descricao'];
 $imagem=$_FILES['imagem']['tmp_name'];
 $tamanho=$_FILES['imagem']['size'];
 $tipo=$_FILES['imagem']['type'];
-$nome=$_FILE['imagem']['name'];
+$nome=$_FILES['imagem']['name'];
 
 //VERIFICA SE O ARQUIVO FOI ENVIADO CORRETAMENTE
 if(!empty($imagem)&& $tamanho>0){
@@ -17,10 +17,10 @@ if(!empty($imagem)&& $tamanho>0){
     fclose($fp);
 
     //protege contra problemas de caracteres no sql
-    $conteudo=mysqli_real_string($conexao,$conteudo);
+    $conteudo=mysqli_real_escape_string($conexao,$conteudo);
 
-    $queryInsercao  ="INSERT INTO table_imagem(evento,descricao,nome_imagem,tamanho_imagem,tipo_imagem,imagem) 
-    values('$evento','$descricao','$nome','$tamanho','$tipo','$conteudo')";
+    $queryInsercao  ="INSERT INTO tabela_imagens(evento,descricao,nome_imagem,tamanho_imagem,tipo_imagem,imagem) 
+    VALUES('$evento','$descricao','$nome','$tamanho','$tipo','$conteudo')";
 
     $resultado = mysqli_query($conexao,$queryInsercao);
 

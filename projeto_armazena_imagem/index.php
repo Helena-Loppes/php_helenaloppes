@@ -54,10 +54,10 @@ if(!$resultado){
         <td align="center"><?php echo $arquivos['nome_imagem']; ?></td>
         <td align="center"><?php echo $arquivos['tamanho_imagem']; ?></td>
         <td align="center">
-            <a href="ver_imagens.php?id=<?php echo $arquivos['codogo'];?>">Ver Imagens"</a>
+            <a href="ver_imagem.php?id=<?php echo $arquivos['codigo'];?>">Ver Imagem</a>
         </td>
         <td align="center">
-            <a href="excluir_imagens.php?id=<?php echo $arquivos['codogo'];?>">Excluir"</a>
+            <a href="excluir_imagem.php?id=<?php echo $arquivos['codigo'];?>">Excluir</a>
         </td>
     </tr>
 <?php } ?>
