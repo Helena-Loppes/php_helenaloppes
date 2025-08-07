@@ -1,7 +1,7 @@
 <?
 //CONFIGURAÇÃOPO DO BANCO DE DADOS
 $host = 'localhost';
-$dbname = 'bd_imagem';
+$dbname = 'bd_imagens';
 $username = 'root';
 $password = '';
 
@@ -11,7 +11,7 @@ try{
     $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); //DEFINE QUE ERROS VAO LANÇAR EXCEÇÕES
 
     //RECUPERA TODOS OS MEUS FUNCIONARIOS DO BANCO DE DADOS
-    $sql="SELECT id, nome, FROM funcionarios";
+    $sql="SELECT id, nome FROM funcionarios";
     $stmt = $pdo->prepare($sql);
     $stmt->execute();
     $funcionarios = $stmt->fetchAll(PDO::FETCH_ASSOC); //BUSCA TODOS OS RESULTADOS COMO UMA MATRIZ ASSOCIATIVA
@@ -45,10 +45,10 @@ try{
     <h1>Consulta de funcionarios</h1>
 
     <ul>
-        <?php foreach ($funcionarios as $funcionario): ?>
+        <?php foreach($funcionarios as $funcionario): ?>
             <li>
             <!--A LINHA ABAIXO EXIBE O LINK PARA VISUALIZAR OS DETALHES O FUNCIONARIO COM BASE NO id-->
-                <a href="visualizar_funcionario.php?id=<?$funcionario['id']?>">
+                <a href="visualizar_funcionario.php?id=<?=$funcionario['id']?>">
         <!--ALINHA A BAIXO EXIBE O NOME DO FUNCIONARIO -->
                 <?=htmlspecialchars($funcionario['nome'])?>
         </a>
@@ -60,5 +60,6 @@ try{
             </li>
         <?php endforeach; ?>
     </ul>
+    <footer>Helena Lopes</footer>
 </body>
 </html>

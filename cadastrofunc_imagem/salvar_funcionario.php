@@ -7,7 +7,7 @@ function redimencionarImagem($imagem,$largura,$altura){
 
     //CRIA UMA NOVA IMAGEM EM BRANCO COM AS NOVAS DIMENSOES
     //imagecreatetruecolor() CRIA UMA NOVA IMAGEM EM BRANCO EM ALTA QUALIDADE
-    $novaImage = imagecreatetruecolor($largura,$altura);
+    $novaImagem = imagecreatetruecolor($largura,$altura);
 
     //CARREGA A IMAGEM ORIGINAL(JPGE) A PARTIR DO ARQUIVO
     //imagecreatefromjpeg() CRIA UMA IMAGEM PHP A PARTIR DE UM JPEG
@@ -39,7 +39,7 @@ function redimencionarImagem($imagem,$largura,$altura){
 
 //CONFIGURAÇÃOPO DO BANCO DE DADOS
 $host = 'localhost';
-$dbname = 'bd_imagem';
+$dbname = 'bd_imagens';
 $username = 'root';
 $password = '';
 
@@ -70,14 +70,14 @@ try{
         $stmt->bindParam(':tipo_foto',$tipoFoto); //LIGA OS PARAMENTROS AS VARIAVEIS
         $stmt->bindParam(':foto',$foto, PDO::PARAM_LOB); //LOB = LARGE OBJECTS USADO PARA DADOS BINARIOS DE IMAGEM
             
-        IF($stmt->execute()){
+        if($stmt->execute()){
             echo "Funcionario cadastrado com sucesso!";
         }else{
             echo "Erro ao fazer upload da foto! Codigo :".$_FILES['foto']['error'];
         }
     }
 }
-}catch(PDOExceotion $e){
+}catch(PDOException $e){
     echo "Erro" .$e->getMEssage(); //Mostrar erro se houver;
 }
 ?>
