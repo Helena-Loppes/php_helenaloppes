@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro de Funcionario</title>
-    <link rel="stylesheet" href=
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <h1>Cadastro</h1>
         <h2>Funcionario</h2>
 <!--FORMULARIO PARA CADASTRAR UM FUNCIONARIO-->
-        <form action="salvar_funcionario.php" method="POST" enctype="mulyipart/form/data">
+        <form action="salvar_funcionario.php" method="POST" enctype="multipart/form-data">
 
     <!-- CAMPO PARA INSERIR O NOME DO FUNCIONARIO -->
         <label for="nome">Nome:</label>

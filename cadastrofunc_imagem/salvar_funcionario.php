@@ -3,7 +3,7 @@
 function redimencionarImagem($imagem,$largura,$altura){
     //OBTEM AS DIMENSOES ORIGINAIS DAS IMAGENS
     //getimagesize (RETORNA) a altura e alargura de uma imagem
-    list($larguraOriginal,a$lturaOriginal) = getmagesize($imagem);
+    list($larguraOriginal,$alturaOriginal) = getimagesize($imagem);
 
     //CRIA UMA NOVA IMAGEM EM BRANCO COM AS NOVAS DIMENSOES
     //imagecreatetruecolor() CRIA UMA NOVA IMAGEM EM BRANCO EM ALTA QUALIDADE
@@ -11,12 +11,12 @@ function redimencionarImagem($imagem,$largura,$altura){
 
     //CARREGA A IMAGEM ORIGINAL(JPGE) A PARTIR DO ARQUIVO
     //imagecreatefromjpeg() CRIA UMA IMAGEM PHP A PARTIR DE UM JPEG
-    $imagemOriginal = imagecreatefromjpeg($imagem)
+    $imagemOriginal = imagecreatefromjpeg($imagem);
 
     //COPIA E REDIRESIONA A IMAGEM ORIGINAL PARA A NOVA
     //imagecopyresampled() COPIA COM REDIRECIONAMENTO E SUAVIZAÇÃO
-    imagecopyresampled($novaImagem,$imagemOriginal, 0, 0, 0, 0, $largura, $altura,
-     $larguraOriginal, $alturaOriginal);
+    imagecopyresampled($novaImagem,$imagemOriginal, 0, 0, 0, 0, $largura,$altura, 
+     $larguraOriginal ,$alturaOriginal);
 
      //INICIA UM BUFFER PARA GUARDAR A IMAGEM COM TEXTO BINARIO
      //ob_start() INICIA O "output bufferING" GUARDANDO A SAIDA
@@ -34,7 +34,7 @@ function redimencionarImagem($imagem,$largura,$altura){
      imagedestroy($imagemOriginal);
 
      //RETORNA A IAMGEM REDIEMNESIOANDA EM FORMATO BINARIO
-     return $dadosImagem
+     return $dadosImagem;
 }
 
 //CONFIGURAÇÃOPO DO BANCO DE DADOS
@@ -53,7 +53,7 @@ try{
 
         if($_FILES['foto']['error'] == 0){
             $nome = $_POST['nome'];
-            $telefone = $_POST['telefone']['name'];
+            $telefone = $_POST['telefone'];
             $nomeFoto = $_FILES['foto']['name'];
             $tipoFoto = $_FILES['foto']['type'];
 
@@ -69,17 +69,28 @@ try{
         $stmt->bindParam(':nome_foto',$nomeFoto); //LIGA OS PARAMENTROS AS VARIAVEIS
         $stmt->bindParam(':tipo_foto',$tipoFoto); //LIGA OS PARAMENTROS AS VARIAVEIS
         $stmt->bindParam(':foto',$foto, PDO::PARAM_LOB); //LOB = LARGE OBJECTS USADO PARA DADOS BINARIOS DE IMAGEM
-
+            
         IF($stmt->execute()){
-            echo "Funcionario cadastrado com sucesso!"
-        }else{
-            echo "Erro ao cadstrar funcionario!"
+            echo "Funcionario cadastrado com sucesso!";
         }else{
             echo "Erro ao fazer upload da foto! Codigo :".$_FILES['foto']['error'];
         }
     }
 }
-} catch(PDOExceotion $e){
+}catch(PDOExceotion $e){
     echo "Erro" .$e->getMEssage(); //Mostrar erro se houver;
 }
 ?>
+<!DOCTYPE html>
+<html lang="pt_BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de imagens</title>
+</head>
+<body>
+    <h1> Lista de Imagens<h1>
+
+    <a href="consulta_funcionario.php">Listar funcionarios</a>
+</body>
+</html>
